@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <nav class="nav-bar">
+            <div class="inter-logo">
+                <img src="icones/linguagem/lampada.webp" width="50" height="50"
+                style="border: solid 2px rgb(81, 80, 80);">
+            </div>
+            
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="site.html" class="nav-link">Ínicio</a></li>
+                    <li class="nav-item"><a href="#story" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#projeto" class="nav-link">Projectos</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contactos</a></li>
+                    <li class="nav-item"><a href="icones/login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <img src="icones/whatsapp-svgrepo-com.svg" width="50" height="50">
+            </div>
+<!--------------------------------------------------parte do menu mobile-------------------------------------------------------->
+            <div class="config">
+                <button>
+                    <img src="icones/linguagem/6586130_configuration_gear_options_preferences_setting_icon.png" width="40" height="40">
+                </button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="icones/menu-mobile (1).png"
+                    style="background-color: transparent; border-radius: 5px;" width="50" height="50"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="site.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#story" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#projeto" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Pontatos</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link">Pontatos</a></li>
+                <li class="nav-item"><a href="icones/login.html" class="nav-link">Login</a></li>
+            </ul>
+            
+        </div>
+    </header>
+  <section>
+    <div class="login-container">
+  
+        <form class="login-form">
+  
+            <h1>Login</h1>
+            
+            <div class="input">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+            </div>
+
+
+            <div class="input">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+           
+           
+            <a href="inicio.html"><button type="submit">Entrar</button></a>
+            <p class="register">Não possui uma conta?<a href="regi.html">Cadastre-se</a></p>
+        </form>
+    </div>
+  </section>
+
+    <!--------------------------------------------------parte do footer do site ------------------------------------------------------->
+    <section class="footer" id="footer">
+        <div class="footer-inter">
+            <div class="links">
+                <p>link's relacionados</p>
+                <li><a href="inicio.html">inicio</a></li>
+                <li><a href="inicio.html">sobre</a></li>
+                <li><a href="inicio.html">projeto</a></li>
+                <li><a href="inicio.html">footer</a></li>
+                <li><a href="inicio.html">contato</a></li>
+            </div>
+            <div class="links">
+                <p>Colaboradores</p>
+                <li><img src="icones/linguagem/745_Family_Couple_Kids_Health-128.webp" width="20" height="20"> <a href="inicio.html">D.P</a></li>
+                <li><img src="icones/linguagem/avatar.webp" width="20" height="20"><a href="inicio.html">AJ(TECH)</a></li>
+                
+            </div>
+            <div class="links">
+                <p>fundadores</p>
+                <li><a href="#">Délcio Manuel</a></li>
+                <li><a href="#">Daniel Raimundo</a></li>
+                <li><a href="#">Fernando Lourenço</a></li>
+                <li><a href="#">José Bukete</a></li>
+                <li><a href="#">Mariano José</a></li>
+            </div>
+        </div>
+    </section>
+        
+    <script>
+        function menuShow(){
+            let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "icones/menu-mobile (1).png"
+            }else{
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "icones/menu-mobile (2).png"
+    }
+}
+    </script>
+</body>
+</html>
+
